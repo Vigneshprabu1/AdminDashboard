@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient,HttpHeaders} from '@angular/common/http';
-let apiURl="http://localhost:8080/"
+let apiURl="http://103.207.1.123:82/"
 
 @Injectable({
   providedIn: 'root'
@@ -8,20 +8,20 @@ let apiURl="http://localhost:8080/"
 export class DataService {
 public result1;id;result;shop;vendor;id1;id2:any
   constructor(private http:HttpClient) {
-    
+
    }
   // PostDetails(type){
   //   return new Promise((resolve , reject) =>{
   //     let headers =new HttpHeaders();
   //     //headers.append("Content-Type","application/json");
-     
+
   //     this.http.get(apiURl+type,{headers:headers}).
   //     subscribe (data =>{
   //       console.log("success");
   //       console.log(this.result1);
   //       resolve(data);
   //     },(err)=>{
-  //       reject(err);  
+  //       reject(err);
   //     });
   //   });
   // }
@@ -36,7 +36,7 @@ public result1;id;result;shop;vendor;id1;id2:any
         console.log("success");
         resolve(data);
       },(err)=>{
-        reject(err);  
+        reject(err);
       });
     });
   }
@@ -50,7 +50,7 @@ public result1;id;result;shop;vendor;id1;id2:any
         console.log("success");
         resolve(data);
       },(err)=>{
-        reject(err);  
+        reject(err);
       });
     });
   }
@@ -58,14 +58,14 @@ public result1;id;result;shop;vendor;id1;id2:any
     return new Promise((resolve , reject) =>{
       let headers =new HttpHeaders();
       //headers.append("Content-Type","application/json");
-      
+
       this.http.get(apiURl+type,{headers:headers}).
       subscribe (data =>{
         console.log("success");
         resolve(data);
         //console.log(data);
       },(err)=>{
-        reject(err);  
+        reject(err);
       });
     });
 
@@ -81,10 +81,10 @@ postDetails(details,type){
       console.log("success");
       resolve(data);
     },(err)=>{
-      reject(err);  
+      reject(err);
     });
   });
-} 
+}
 
 
 
@@ -125,7 +125,6 @@ public respon(){
 }
 
 
- 
+
 
 }
-
