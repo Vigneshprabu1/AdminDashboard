@@ -1,13 +1,13 @@
 
-    
+
     <h1 style="text-align: center"> PRODUCT DETAILS </h1>
 
   <form>
           <table align="center">
-    
+
   <br>
             <tr>
-             <td>Product Name :</td> <td><input type="text"required [(ngModel)]="providerDetails.name" [ngModelOptions]="{standalone: true}"> </td><br>
+             <td>Product Name :</td> <td><input type="text"autofocus required [(ngModel)]="providerDetails.name" [ngModelOptions]="{standalone: true}"> </td><br>
             </tr>
             <tr>
              <td>Image :</td> <td><input type="text" required [(ngModel)]="providerDetails.img" [ngModelOptions]="{standalone: true}" ></td><br>
@@ -19,7 +19,7 @@
                 <option value="mens">Mens</option>
                 <option value="womens">Womens</option>
                 <option value="childrens">Childrens</option>
-                
+
               </select>
             </td>
               </tr>
@@ -30,7 +30,7 @@
                                 <option value="textile">Textile</option>
                                 <option value="Sports">Sports</option>
                                 <option value="gifts">Gifts</option>
-                                
+
                               </select>
                             </td>
                             </tr>
@@ -64,13 +64,13 @@
             <tr>
              <td>Sku :</td> <td><input type="text" required [(ngModel)]="providerDetails.sku" [ngModelOptions]="{standalone: true}"></td><br>
             </tr>
-            
+
             <tr>
                 <td>Price :</td> <td><input type="text" required [(ngModel)]="providerDetails.price" [ngModelOptions]="{standalone: true}"></td><br>
             </tr>
             <tr>
                 <td>Quantity :</td> <td><input type="text" required [(ngModel)]="providerDetails.quantity" [ngModelOptions]="{standalone: true}"></td><br>
-            </tr>            
+            </tr>
             <tr>
              <td>Tax :</td> <td><input type="text" required [(ngModel)]="providerDetails.tax" [ngModelOptions]="{standalone: true}"></td><br>
             </tr>
@@ -86,5 +86,3 @@
                   <div style="text-align: center">
            <input type="submit"  style="box-align: center" value="Submit" (click)="update()"></div>
           </form>
-    
-

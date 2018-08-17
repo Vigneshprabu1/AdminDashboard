@@ -14,16 +14,16 @@
                             <body class="image">
                                     <!-- <div style="background-image: url(../../assets/1.jpg.jpg)"> -->
                                     <h1 style="text-align: center;"> PRODUCT DETAILS</h1>
-                                    
-                                    
-                                    
-                                      
-                                       <div class="container">       
-                                    
+
+
+
+
+                                       <div class="container">
+
                                             <table align="center"    >
                                       <br>
                                                 <tr>
-                                                 <td>Product Name :</td> <td><input type="text"required [(ngModel)]="providerDetails.name" [ngModelOptions]="{standalone: true}"> </td><br>
+                                                 <td>Product Name :</td> <td><input type="text" autofocus required [(ngModel)]="providerDetails.name" [ngModelOptions]="{standalone: true}"> </td><br>
                                                 </tr>
                                                 <tr>
                                                  <td>Image :</td> <td><input type="file" required [(ngModel)]="providerDetails.img" [ngModelOptions]="{standalone: true}"></td><br>
@@ -35,7 +35,7 @@
                                                     <option value="mens">Mens</option>
                                                     <option value="womens">Womens</option>
                                                     <option value="childrens">Childrens</option>
-                                                    
+
                                                   </select>
                                                 </td>
                                                   </tr>
@@ -46,7 +46,7 @@
                                                                     <option value="textile">Textile</option>
                                                                     <option value="Sports">Sports</option>
                                                                     <option value="gifts">Gifts</option>
-                                                                    
+
                                                                   </select>
                                                                 </td>
                                                                 </tr>
@@ -59,7 +59,7 @@
                                                                                 </select>
                                                                               </td>
                                                                               </tr>
-                                                     
+
                                                 <tr>
                                                  <td>Short Description:</td> <td><input type="text"  required [(ngModel)]="providerDetails.shortDesc" [ngModelOptions]="{standalone: true}"></td><br>
                                                 </tr>
@@ -81,13 +81,13 @@
                                                 <tr>
                                                  <td>Sku :</td> <td><input type="text" required [(ngModel)]="providerDetails.sku" [ngModelOptions]="{standalone: true}"></td><br>
                                                 </tr>
-                                                
+
                                                 <tr>
                                                     <td>Price :</td> <td><input type="text" required [(ngModel)]="providerDetails.price" [ngModelOptions]="{standalone: true}"></td><br>
                                                 </tr>
                                                 <tr>
                                                     <td>Quantity :</td> <td><input type="text" required [(ngModel)]="providerDetails.quantity" [ngModelOptions]="{standalone: true}"></td><br>
-                                                </tr>            
+                                                </tr>
                                                 <tr>
                                                  <td>Tax :</td> <td><input type="text" required [(ngModel)]="providerDetails.tax" [ngModelOptions]="{standalone: true}"></td><br>
                                                 </tr>
@@ -98,7 +98,7 @@
                                                 <tr>
                                                     <td>UpdatedAt :</td> <td><input type="text" required [(ngModel)]="providerDetails.updatedAt" [ngModelOptions]="{standalone: true}"></td><br>
                                                 </tr> -->
-                                                
+
                                                </table>
                                                <div style="text-align: center" >
                                                <input type="submit" value="Submit" (click)="save()" style="box-align:center;">
@@ -106,17 +106,17 @@
                                             </div>
                                         </body>
                                     <!-- </div> -->
-                                     
+
                     </div>
                     <div id="update" class="tab-pane fade ">
-                        
+
                                     <div class="image">
                                             <h1 style="text-align: center">Update Product</h1>
-                                            
-                                              <div class="box"> 
-                                              <div class="container-1"> 
-                                                <input type="search" id="search" placeholder="Search..." [(ngModel)]="searchText"> 
-                                              </div> 
+
+                                              <div class="box">
+                                              <div class="container-1">
+                                                <input type="search" id="search" autofocus placeholder="Search..." [(ngModel)]="searchText">
+                                              </div>
                                             </div>
                                               <br>
                                               <br>
@@ -129,35 +129,35 @@
                                               </button>
                                               </div>
                                               <br>
-                                         
-                           
+
+
                         </div>
                     </div>
                     <div id="delete" class="tab-pane fade">
                             <div class="image">
                                     <h1 style="text-align: center">Delete Product</h1>
-                                    </div> 
-                                    <div class="box"> 
-                                      <div class="container-1"> 
-                                        <input type="search" id="search" placeholder="Search..." [(ngModel)]="searchText"> 
-                                      </div> 
+                                    </div>
+                                    <div class="box">
+                                      <div class="container-1">
+                                        <input type="search" id="search" autofocus placeholder="Search..." [(ngModel)]="searchText">
+                                      </div>
                                     </div>
                                     <!--<input align="middle" type="search"  placeholder="type here to search" >-->
-                                    
+
                                     <br>
                                     <br>
                                     <br>
                                     <br>
-                                  
+
                                    <div style="text-align: center;">
                                     <button  *ngFor="let ld of result | filter:searchText"  style=" width: 50vw;margin-bottom: 10px" (click)="clickMethod(ld)">
                                       {{ld.brandName}}&nbsp;&nbsp;&nbsp;&nbsp;{{ld.name}}
-                                      
+
                                     </button>
                                     </div>
-                                    
+
                                     <br>
-                                    
+
                                     </div>
                     <div id="view" class="tab-pane fade">
                         <table  style="width:90%" class="table table-bordered">
@@ -198,11 +198,9 @@
                                 <td> {{ prod.quantity }} </td>
                                 <td> {{ prod.tax }} </td>
                                 <td> {{ prod.prodId }} </td></tr>
-                            </table> 
+                            </table>
         </div>
         </div>
         </div>
         </div>
         </section>
-    
-    
