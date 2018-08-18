@@ -33,7 +33,7 @@
                                   <label>Contact number:</label></td>
                                   <td ><input type="number" required placeholder="Enter ContactNo" [(ngModel)]="vendor.contactno" [ngModelOptions]="{standalone: true}"></td>
                                   </tr><br>
-          
+
                                   <tr>
                                   <td ><label>Address:</label></td>
                                   <td >
@@ -49,13 +49,13 @@
                                   <tr>
                                       <td>
                                       <label>Image:</label></td>
-                                      <td><input type="text"  required  [(ngModel)]="vendor.img" [ngModelOptions]="{standalone: true}"></td>
+                                      <td><input type="text"  required placeholder="Enter Image URL"  [(ngModel)]="vendor.img" [ngModelOptions]="{standalone: true}"></td>
                                       </tr>
                                       <br>
                                       <tr>
                                           <td>
                                           <label>VendorId:</label></td>
-                                          <td><input type="number"  required  [(ngModel)]="vendor.vendorId" [ngModelOptions]="{standalone: true}"></td>
+                                          <td><input type="number"  required placeholder="Enter Vendor Id"  [(ngModel)]="vendor.vendorId" [ngModelOptions]="{standalone: true}"></td>
                                     </tr>
 
 
@@ -129,7 +129,6 @@
                                         <th>Id</th>
                                         <th>Vendorname</th>
                                         <th>Contactno</th>
-                                        <th>BuyerId</th>
                                         <th>Address</th>
                                         <th>Email</th>
                                         <th>Image</th>
@@ -139,7 +138,6 @@
                                         <td> {{ vendor.id }} </td>
                                         <td> {{ vendor.vendorname }} </td>
                                         <td> {{ vendor.contactno }} </td>
-                                        <td> {{ vendor.buyer_id }} </td>
                                         <td> {{vendor.address}} </td>
                                         <td> {{ vendor.email }} </td>
                                          <td><img src="{{vendor.img}}" alt="wrong url" class="img-thumbnail" style="height:100px;width: 100px" /></td>
