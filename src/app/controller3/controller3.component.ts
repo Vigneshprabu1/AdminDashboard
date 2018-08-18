@@ -11,8 +11,8 @@ import { Route, Router } from '@angular/router';
 export class Controller3Component  {
 
    public responseData;listData;result;searchText;id:any
-   vendor ={"vendorname":"","contactno":"","buyer_id":"","address":"","email":"","img":"","vendorId":""};
-  constructor(public data:DataService,private  apiService:  DataService,public router:Router) { 
+   vendor ={"vendorname":"","contactno":"","address":"","email":"","img":"","vendorId":""};
+  constructor(public data:DataService,private  apiService:  DataService,public router:Router) {
 this.result=this.data.vendor;
 
 
@@ -20,21 +20,21 @@ this.result=this.data.vendor;
 
 
  insert(){
-  
+
    //console.log(this.vendor)
- 
+
 this.data.postShop(this.vendor, "vendors/save").then((result) =>{
       var results = this.vendor;
       //console.log(this.vendor);
       this.router.navigate(['main']);
-    
+
         }, (err)=> {
           alert("Please Enter The valid Data or Fill All The Columns");
        }).catch((err) =>{
           console.log("Unhandled rejection",err.message);
-          
-        
-     
+
+
+
   });
 
 }
